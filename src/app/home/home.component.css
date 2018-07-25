@@ -1,0 +1,495 @@
+.body{
+  background-color: #cfcfca;
+}
+.head-title{
+  margin-left: 152px;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.head-toolbar{
+  background-color: #66615b;
+}
+.head-toolbar-name{
+  color: whitesmoke;
+}
+
+.logout-icon{
+  color: whitesmoke;
+  float: right;
+  margin-left: auto;
+  margin-right: 33px;
+}
+
+.container{
+  background-color: #cfcfca;
+  height: 100%;
+}
+
+.application-card{
+  margin: 33px;
+}
+
+
+
+.cdk-overlay-pane{
+  margin-top: 70px;
+  /*margin-left: -241px;*/
+  width: 280px;
+  z-index: inherit;
+}
+.navbar{
+  /*background-color: #403d57;*/
+  border-bottom: outset;
+  border-bottom-width: thin;
+  border-color: #82c2fa;
+  /*border-bottom: double;*/
+  /*border-bottom-width: thick;*/
+  /*border-color: #6f9bbc;*/
+  background-color: white;
+  /*width: 100%;*/
+  /*margin-left: -9px;*/
+  margin-top: -8px;
+  color: white;
+  position: fixed;
+  overflow: inherit;
+  top: 0;
+  white-space: nowrap;
+  z-index: 99999;
+}
+
+/*.glyphicon{*/
+/*position: relative;*/
+/*top: 1px;*/
+/*display: inline-block;*/
+/*font-style: normal;*/
+/*font-weight: 400;*/
+/*line-height: 1;*/
+/*-webkit-font-smoothing: antialiased;*/
+
+/*}*/
+
+/*.glyphicon-search:before*/
+/*{content:"\e003"}*/
+
+.btn-primary{
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  padding: 0 10px;
+}
+.btn{
+  display: inline-block;
+  /*padding: 6px 12px;*/
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+
+body {
+  padding-top: 50px;
+}
+.dropdown.dropdown-lg .dropdown-menu {
+  height: auto;
+  margin-top: -6px;
+  padding: 6px 20px;
+  margin-left: 320px;
+}
+
+.logout-dropdown-menu{
+  margin: -6px -176px 0;
+  min-width: 256px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.input-group-btn .btn-group {
+  display: flex !important;
+}
+.btn-group .btn {
+  border-radius: 0;
+  margin-left: -1px;
+}
+.btn-group .btn:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.form-group .form-control:last-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#adv-search {
+  width: 500px;
+  margin: 0 auto;
+}
+.dropdown.dropdown-lg {
+  position: static !important;
+}
+.dropdown.dropdown-lg .dropdown-menu {
+  min-width: 478px;
+  min-height: 114px;
+}
+
+.search_results{
+  margin: 10px;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.con-search-list{
+  overflow: auto;
+  margin-top: -3px;
+}
+.con_result_img{
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  margin-top: 14px;
+  margin-bottom: -11px;
+  overflow: hidden;
+  /*background-image: url("./../../assets/images/raghu1.jpg");*/
+  background-size: cover;
+  z-index: inherit;
+  text-decoration: none;
+}
+.con_result_name{
+  font-size: 18px;
+  margin-top: -22px;
+  margin-bottom: 9px;
+  text-decoration: none;
+  color: #3d3d6e;
+  margin-left: 52px;
+}
+footer {
+  /* just for demo */
+  border-top: outset;
+  border-top-width: thin;
+  border-color: #82c2fa;
+  background-color: white;
+  text-align:center;
+  padding:20px;
+  /* just for demo */
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  z-index: 999999;
+}
+.keep-open{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 9px;
+}
+
+.dropdown-menu-form{
+  margin: 0 -200px 0;
+  overflow: scroll;
+  width: 381px;
+  height: 601px;
+}
+.notification-star{
+  min-width: 60px;
+  margin-left: 66px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 370px)  {
+  .navbar{
+    /*background-color: #403d57;*/
+    border-bottom: outset;
+    border-bottom-width: thin;
+    border-color: #82c2fa;
+    /*border-bottom: double;*/
+    /*border-bottom-width: thick;*/
+    /*border-color: #6f9bbc;*/
+    background-color: white;
+    /*width: 100%;*/
+    /*margin-left: -9px;*/
+    margin-top: -8px;
+    color: white;
+    position: fixed;
+    overflow: inherit;
+    top: 0;
+    white-space: nowrap;
+    z-index: 99999;
+    /*width: auto;*/
+  }
+
+  .navmenu{
+    /*display: none;*/
+    margin-top: 8px;
+    color: #347ab8;
+    margin-left: 249px;
+  }
+  .head-title{
+    /*color: white;*/
+    color: #347ab8;
+    margin-left: -10px;;
+    margin-top: 17px;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: Lato;
+
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+    height: auto;
+    margin-top: -6px;
+    padding: 6px 20px;
+    margin-left: 320px;
+  }
+  .search-query{
+    margin-top: 7px;
+    border: groove;
+    border-color: #347ab8;
+    margin-left: 8px;
+
+    width: 121px;
+    height: 24px;
+    border-radius: 8px;
+    border: unset;
+    margin-right: -5px;
+
+  }
+  .keep-open{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -3px;
+    margin-top: 10px;
+    margin-right: -25px;
+  }
+  .notification-star{
+    min-width: 60px;
+    margin-left: 66px;
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+    /*height: 100%;*/
+    margin-top: -6px;
+    padding: 6px 20px;
+    margin-left: 0;
+
+    min-width: 478px;
+    /*min-height: 114px;*/
+  }
+  .dropdown-menu-form{
+    margin: 0 -204px 0;
+    overflow: scroll;
+    width: 321px;
+    height: 601px;
+  }
+
+
+  .profmenu{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-top: 12px;
+    overflow: hidden;
+    /*background-image: url("./../../assets/images/raghu1.jpg");*/
+    background-size: cover;
+    z-index: inherit;
+
+  }
+  .btn-group{
+    margin-left: 24px;
+    /*!*display: none;*!*/
+    /*!*margin-top: -91px;*!*/
+    /*padding: 0;*/
+  }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 420px) {
+  .head-title{
+    /*color: white;*/
+    color: #347ab8;
+    margin-left: -10px;;
+    margin-top: 17px;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: Lato;
+
+  }
+  .search-query{
+    margin-top: 7px;
+    border: groove;
+    border-color: #347ab8;
+    margin-left: -1px;
+    width: 158px;
+    height: 24px;
+    border-radius: 8px;
+    border: unset;
+    margin-right: -5px;
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+    height: auto;
+    margin-top: -6px;
+    padding: 6px 20px;
+    margin-left: 320px;
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+    /*height: 100%;*/
+    margin-top: -6px;
+    padding: 6px 20px;
+    margin-left: 0;
+
+    min-width: 478px;
+    /*min-height: 114px;*/
+  }
+  .btn-primary{
+    padding: 0px 3px;
+  }
+  .dropdown-menu-form{
+    margin: 0 -253px 0;
+    overflow: scroll;
+    width: 381px;
+    height: 601px;
+  }
+  .keep-open{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-top: 9px;
+    margin-right: -25px;
+  }
+  .notification-star{
+    min-width: 60px;
+    margin-left: 66px;
+  }
+  .logout-dropdown-menu{
+    margin: -4px -197px 0px;
+    min-width: 256px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .profmenu{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-top: 12px;
+    overflow: hidden;
+    /*background-image: url("./../../assets/images/raghu1.jpg");*/
+    background-size: cover;
+    z-index: inherit;
+
+  }
+  .btn-group {
+    margin-left: 38px;
+
+  }
+  .navmenu{
+    display: none;
+    margin-top: 8px;
+    color: #347ab8;
+    /*margin-left: 249px;*/
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 550px) {
+  .head-title{
+    /*color: white;*/
+    color: #347ab8;
+    margin-left: -10px;;
+    margin-top: 17px;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: Lato;
+
+  }
+  .search-query{
+    margin-top: 7px;
+    border: groove;
+    border-color: #347ab8;
+    margin-left: 11px;
+    width: 177px;
+    height: 24px;
+    border-radius: 8px;
+    border: unset;
+    margin-right: -5px;
+
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+    height: auto;
+    margin-top: -6px;
+    padding: 6px 20px;
+    margin-left: 320px;
+  }
+  .dropdown.dropdown-lg .dropdown-menu {
+    /*height: 100%;*/
+    margin-top: -6px;
+    padding: 6px 20px;
+    margin-left: 0;
+
+    min-width: 478px;
+    /*min-height: 114px;*/
+  }
+  .keep-open{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 38px;
+    margin-top: 9px;
+    margin-right: -25px;
+  }
+  .dropdown-menu-form{
+    margin: 0 -303px 0;
+    overflow: scroll;
+    width: 425px;
+    height: 601px;
+  }
+  .notification-star{
+    min-width: 60px;
+    margin-left: 86px;
+  }
+  .btn-group {
+    margin-left: 32px;
+  }
+  .profmenu{
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    margin-top: 12px;
+    overflow: hidden;
+    /*background-image: url("./../../assets/images/raghu1.jpg");*/
+    background-size: cover;
+    z-index: inherit;
+
+  }
+  .btn-primary{
+    padding: 0 6px;
+  }
+  .navmenu{
+    /*display: none;*/
+    margin-top: 8px;
+    color: #347ab8;
+    /*margin-left: 249px;*/
+  }
+
+}

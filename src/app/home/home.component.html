@@ -1,0 +1,53 @@
+<mat-toolbar class="head-toolbar">
+  <div>
+    <div class="dropdown dropdown-lg" dropdown>
+      <a class="head-title" routerLink="/home">Intelliment</a>
+      <input dropdownToggle="dropdown" (keyup)="searchTerm.next($event.target.value)" id="in" class="search-query"
+             placeholder="Search" style=" border: groove; border-color: #73a9d9;"/>
+
+      <div class="dropdown-menu" *dropdownMenu role="menu">
+
+        <div style="    margin-top: -572px;margin-left: -241px;    background-color: #f1ecec;">
+          <h5>Total Count: {{total_count}}</h5>
+
+          <div class="con-search-list" id="output" *ngFor="let users of search_results | slice:0:10">
+            <a routerLink="/home/connection_profile" style=" text-decoration: none;">
+              <a routerLink="/user/profile" (click)="onUserclick(users)"><img class="con_result_img"
+                                                                              src="{{users.avatar_url}}">
+                <p class="con_result_name">{{users.login}}</p></a>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-group" dropdown style="margin-left: 669px;">
+    <mat-icon class="logout-icon" dropdownToggle="dropdown" aria-expanded="true">person</mat-icon>
+    <ul *dropdownMenu class="dropdown-menu" role="menu" style="margin-left: -125px;">
+
+      <li>
+        <p routerLink="/login">Logout</p>
+      </li>
+      <li>
+        <p>Profile</p>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>
+
+
+<div class="container">
+  <h3>User's List</h3>
+
+  <div class="row" *ngFor="let user_list of all_users">
+    <mat-card class="application-card">
+      <a routerLink="/user/profile" (click)="onUserclick(user_list)"><img class="con_result_img"
+                                                                          src="{{user_list.avatar_url}}">
+        <h5 style="margin-left: 52px;margin-top: -30px;">{{user_list.login}}</h5></a>
+    </mat-card>
+  </div>
+
+</div>

@@ -1,0 +1,113 @@
+
+
+<mat-toolbar class="head-toolbar">
+  <div>
+    <div class="dropdown dropdown-lg" dropdown>
+      <a class="head-title" routerLink="/home">Intelliment</a>
+      <input dropdownToggle="dropdown" (keyup)="searchTerm.next($event.target.value)" id="in" class="search-query"
+             placeholder="Search" style=" border: groove; border-color: #73a9d9;"/>
+
+      <div class="dropdown-menu" *dropdownMenu role="menu">
+
+        <div style="    margin-top: -572px;margin-left: -241px;    background-color: #f1ecec;">
+          <h5>Total Count: {{total_count}}</h5>
+
+          <div class="con-search-list" id="output" *ngFor="let users of search_results | slice:0:10">
+            <a routerLink="/home/connection_profile" style=" text-decoration: none;" >
+              <a routerLink="/user/profile" (click)="onUserclick(users)"><img class="con_result_img" src="{{users.avatar_url}}">
+                <p class="con_result_name">{{users.login}}</p></a>
+
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-group" dropdown style="margin-left: 669px;">
+    <mat-icon class="logout-icon"  dropdownToggle="dropdown" aria-expanded="true" >person</mat-icon>
+    <ul *dropdownMenu class="dropdown-menu" role="menu" style="margin-left: -125px;">
+
+      <li>
+        <p routerLink="/login">Logout</p>
+      </li>
+      <li>
+        <p>Profile</p>
+      </li>
+
+    </ul>
+  </div>
+</mat-toolbar>
+
+<div class="container-con-prof">
+
+<div>
+  <mat-card class="con-info-prof" style="box-shadow: none;">
+
+  <a ><img  class="con-prof-img" src="{{user.avatar_url}}"></a>
+
+    <div class="con-prof-info">
+      <h1 style="text-align: center;" class="con-name-sz"> {{user.name}}</h1>
+      <h1 style="text-align: center;"></h1>
+
+      <p class="postorg">Location - {{user.location}}</p>
+      <p class="postorg">Followers - {{user.followers}}</p>
+      <p class="postorg">Following - {{user.following}}</p>
+    </div>
+
+  </mat-card>
+</div>
+
+
+    <mat-card  class="con-recent-title" style="position: static;">
+      <h3 style="text-align: center; margin-top: -11px; color: #483d8b;">User's Repositories</h3>
+      <div class="animate-review-title animated-background"></div>
+      <div class="animate-review-title animated-background"></div>
+
+    </mat-card>
+  <div>
+    <div class="con-feeds">
+
+      <div class="article-preview" style="margin-top: 10px;">
+
+      <div  *ngFor="let repo of user_repo">
+      <mat-card  class="con-reviews" style="box-shadow: 0 3px 1px -2px rgba(170, 166, 166, 0.2), 0 2px 2px 0 rgba(217, 214, 214, 0.46), 0 1px 5px 0 rgba(211, 210, 208, 0.12);">
+
+      <a><img class="con-feed-img" src="{{repo.owner.avatar_url}}"></a>
+      <a style="text-decoration: none"><h3 class="con-feed-nme">{{repo.name}}</h3></a>
+
+      <p class="con-date">{{ repo.created_at | date : format : timeZone }}</p>
+
+
+      </mat-card>
+
+      </div>
+    </div>
+
+   <div>
+    <mat-card class="con-mutual">
+      <h3 style="text-align: center; margin-top: -11px;">Followers</h3>
+
+    </mat-card>
+
+      <mat-card  class="mutual-conect" style="box-shadow: 0 3px 1px -2px rgba(170, 166, 166, 0.2), 0 2px 2px 0 rgba(217, 214, 214, 0.46), 0 1px 5px 0 rgba(211, 210, 208, 0.12);">
+
+      <div  *ngFor="let followers of user_followers ">
+
+        <a style="padding: 11px;"><img class="con-feed-img" src="{{followers.avatar_url}}"></a>
+
+        <a style="text-decoration: none"><h4 style="margin-top: -58px; color: #3d3d6e; text-decoration: none;
+                         margin-left: 94px;   font-family: sans-serif;">{{followers.login}}</h4></a>
+
+        <hr style="border-color: mintcream;">
+
+      </div>
+    </mat-card>
+    </div>
+  </div>
+
+
+</div>
+

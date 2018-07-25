@@ -1,0 +1,74 @@
+<body>
+<nav class="navbar navbar-transparent navbar-absolute">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">Intelliment</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a  routerLink="/register">
+            Register
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="wrapper wrapper-full-page login-page">
+  <div class="full-page login-page" data-color="" href="./../assets/background-2.jpg">
+
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+            <form (ngSubmit)="onLoginValidation()" [formGroup]="loginForm">
+              <div class="card" data-background="color" data-color="blue">
+                <div class="card-header">
+                  <h3 class="card-title">Login</h3>
+                </div>
+                <div class="card-content">
+                  <label>Email address</label>
+                  <mat-form-field class="username_input">
+                    <input matInput  placeholder="E-mail"  required class="email_input"  formControlName="email">
+                  </mat-form-field>
+
+                  <br><label>Password</label>
+                  <mat-form-field class="password_input">
+                    <input matInput placeholder="Password" class="password" required [type]="hide ? 'password' : 'text'"
+                           formControlName="password">
+                    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+
+                  </mat-form-field>
+
+                </div>
+
+                <div class="card-footer text-center">
+                  <br><button mat-button type="submit" class="btn btn-fill btn-wd ">Let's go</button>
+                  <div *ngIf="message" class="alert alert-danger">{{message}}</div>
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer footer-transparent">
+      <div class="container">
+        <div class="copyright">
+          &copy; <script>document.write(new Date().getFullYear())</script>, made with by <a>Intelliment</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
